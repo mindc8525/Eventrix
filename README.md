@@ -19,7 +19,7 @@ Eventrix is a campus-wide event management platform that brings together all clu
 ## 📦 Setup Instructions
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/eventrix.git
+git clone https://github.com/mindc8525/Eventrix.git
 cd eventrix
 
 # Install dependencies (in frontend and backend folders)
