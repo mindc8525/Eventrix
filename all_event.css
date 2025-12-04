@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.events-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.carousel-slides {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.slide {
+    position: relative;
+}
+
+.event-card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card .tag {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin: 15px;
+}
+
+.event-card h2 {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.event-card p {
+    padding: 0 15px;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.view-event {
+    display: inline-block;
+    padding: 0 15px 15px;
+    color: #00a8ff;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.event-card:hover .view-event {
+    color: #66c7ff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .carousel-slides {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-slides {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+}
